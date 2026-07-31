@@ -12,7 +12,7 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          client: "400"
+          client: "100"
         exclude:
           - /test/
           - /localService/
