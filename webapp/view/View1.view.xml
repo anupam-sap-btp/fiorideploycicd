@@ -20,7 +20,7 @@
 		items="{
 			path: '/ZC_MATDOC_DET'
 		}" >
-		<StandardListItem id="li1"
+		<StandardListItem id="li2"
 			title="{MaterialDocument}"
 			counter="{QuantityInBaseUnit}"/>
 	</List>
