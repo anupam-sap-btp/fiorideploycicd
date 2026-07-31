@@ -2,14 +2,14 @@
 
 specVersion: "4.0"
 metadata:
-  name: project1
+  name: project2
 type: application
 server:
   customMiddleware:
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
-        ignoreCertErrors: true # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ignoreCertErrors: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         ui5:
           path:
             - /resources
@@ -19,7 +19,6 @@ server:
           - path: /sap
             url: https://vhlesm4dci.hana.systems.mp:44300
             client: '100'
-            auth: duttaroya:WelcomeWelcome@02
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
