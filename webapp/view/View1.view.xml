@@ -1,0 +1,29 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+    <l:VerticalLayout id="vl1" class="sapUiContentPadding" width="100%">
+		<!-- <Label id="la" text="Label A (required)" labelFor="input-a" />
+		<Input id="input-a" required="true" />
+
+		<Label id="lb"
+			text="Label B (bold)"
+			labelFor="input-b"
+			design="Bold" />
+		<Input id="input-b" />
+
+		<Label id="lc" text="{ProductName}" labelFor="input-c" />
+		<Input id="input-c" value="{path:'/Products(1)/ProductName'}"/> -->
+        <List id="l1"
+		headerText="Products"
+		items="{
+			path: '/ZC_MATDOC_DET'
+		}" >
+		<StandardListItem id="li1"
+			title="{MaterialDocument}"
+			counter="{QuantityInBaseUnit}"/>
+	</List>
+	</l:VerticalLayout>
+    </Page>
+</mvc:View>
